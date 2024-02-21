@@ -125,7 +125,27 @@ source ~/catkin_ws/devel/setup.bash
 ```
 Save the file. ROS Workspace now has been done!!
 
-## Arduino installation tutorial :
+## Creat ROS Package
+Open Terminal and go to catkin_ws directory with the following command
+```bash
+cd catkin_ws
+```
+Go deeper into src folder
+
+```bash
+cd src
+```
+At path “catkin_ws/src”, use the following command to construct the package folder name 
+```bash
+catkin_create_pkg (your package name) rospy
+```
+Go back to workspace directory
+```bash
+cd ..
+catkin_make
+```
+
+## Arduino installation tutorial 
 Install the Arduino IDE. Everything can be downloaded at the Arduino website.
 ```bash
 weget https://www.arduino.cc/arduino-1.8.15-linux64.tar.xz
