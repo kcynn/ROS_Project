@@ -25,10 +25,10 @@
 #### Circuit Diagram
 ![circuit](https://github.com/kcynn/ROS_Project/assets/154345247/102901e1-ca4a-400a-b6b9-e6303d7d294b)
 
-### How To Install Ubuntu 20.04
+## How To Install Ubuntu 20.04
 ####     Can be installed following the attached link >> https://www.youtube.com/watch?v=C5deqtXrpgk
 
-### How To install of ROS Noetic in Ubuntu 
+## How To install of ROS Noetic in Ubuntu 
 **1. Open Terminal Window**
 
 > To perform the installation of ROS Noetic we need a command terminal and sudo user access. So, run the terminal app on your Ubuntu either by using the keyboard shortcut **Ctrl+ALT+T** or from all applications.
@@ -84,7 +84,7 @@
   sudo rosdep init
   rosdep update
 ```
-### How to Construct ROS Workspace
+## How to Construct ROS Workspace
 
 Open Terminal and use the following command to call ROS setup.bash
 ```bash
@@ -125,7 +125,7 @@ source ~/catkin_ws/devel/setup.bash
 ```
 Save the file. ROS Workspace now has been done!!
 
-#### Arduino installation tutorial :
+## Arduino installation tutorial :
 Install the Arduino IDE. Everything can be downloaded at the Arduino website.
 ```bash
 weget https://www.arduino.cc/arduino-1.8.15-linux64.tar.xz
@@ -140,3 +140,4 @@ cd arduino-1.8.15
 ```bash
 sudo ./install.sh
 ```
+
