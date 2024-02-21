@@ -1,0 +1,18 @@
+<launch>
+	<arg name="port" default="/dev/ttyACM0" />
+	<arg name="model" default="$(find ros_project)/urdf/model_robot.urdf"/>
+	<arg name="gui" default="true" />
+	<arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz" />
+	
+	<param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+	
+	<node name="GUI" pkg="ros_project" type="gui_ros.py" output="screen"/>
+	
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+	<node name="rosserial_node" pkg="rosserial_arduino" type="serial_node.py" output="screen">
+		<param name="port" value="$(arg port)" />
+	
+	</node>
+
+</launch>
