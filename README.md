@@ -168,7 +168,7 @@ cd ~/(name your catkin workspace)/src
 ```
 2.clone github
 ```bash
-git clone https://github.com/user name/ROS_Project.git
+git clone https://github.com/kcynn/ROS_Project.git
 ```
 ```bash
 cd ..
@@ -178,12 +178,12 @@ catkin_make
 ```
 3.add permission to execute gui python
 ```bash
-cd src/ROS_Project/src
+cd src/ROS_Project
 ```
 ```bash
 chmod +x gui_ros.py
 ```
 ```bash
-roslaunch (name your package) ros_robot.launch port:="(name your port of arduino)"
+roslaunch ROS_Project ros_robot.launch port:="(name your port of arduino)"
 ```
-
+> ex port >> /dev/ttyACM0
