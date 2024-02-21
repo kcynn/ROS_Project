@@ -26,3 +26,4 @@
 ![circuit](https://github.com/kcynn/ROS_Project/assets/154345247/102901e1-ca4a-400a-b6b9-e6303d7d294b)
 
 ### How To Install Ubuntu 20.04
+####     Can be installed following the attached link >> https://www.youtube.com/watch?v=C5deqtXrpgk
