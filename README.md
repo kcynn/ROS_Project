@@ -160,4 +160,21 @@ cd arduino-1.8.15
 ```bash
 sudo ./install.sh
 ```
+## How to install
+1.go into src file of your ROS workspace
+```bash
+cd ~/(name your catkin workspace)/src
+```
+2.clone github
+```bash
+git clone https://github.com/user name/ROS_Project.git
+cd ..
+catkin_make
+```
+3.add permission to execute gui python
+```bash
+cd src/ROS_Project/src
+chmod +x gui_ros.py
+roslaunch (name your package) ros_robot.launch port:="(name your port of arduino)"
+```
 
