@@ -27,3 +27,7 @@
 
 ### How To Install Ubuntu 20.04
 ####     Can be installed following the attached link >> https://www.youtube.com/watch?v=C5deqtXrpgk
+
+### How To install of ROS Noetic in Ubuntu 
+> 1. Open Terminal Window
+>      To perform the installation of ROS Noetic we need a command terminal and sudo user access. So, run the terminal app on your Ubuntu either by using the keyboard shortcut **Ctrl+ALT+T** or from all applications.
