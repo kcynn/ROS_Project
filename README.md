@@ -21,5 +21,8 @@
 7. 1 USB V2.0 (Type A To Type B )
 8. Jump Wire
 9. Power Supply 5V 2A
+    
 #### Circuit Diagram
 ![circuit](https://github.com/kcynn/ROS_Project/assets/154345247/102901e1-ca4a-400a-b6b9-e6303d7d294b)
+
+### How To Install Ubuntu 20.04
