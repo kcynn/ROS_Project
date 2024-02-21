@@ -84,6 +84,59 @@
   sudo rosdep init
   rosdep update
 ```
+### How to Construct ROS Workspace
 
+Open Terminal and use the following command to call ROS setup.bash
+```bash
+ sudo rosdep init 
+```
+Use the following to add information in ROS setup.bash file to .bashrc. This will specify the Terminal to access to ROS every time that use terminal.
+```bash
+ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+```
+Use the following to call .bashrc of Ubuntu
+```bash
+source ~/.bashrc
+```
+Now, we are going to construct the folder “catkin_ws” in folder home. By using the following command
+```bash
+mkdir catkin_ws
+```
+Go to the “catkin_ws” folder
+```bash
+cd catkin_ws
+```
+Use the following command to create the folder name “src”
+```bash
+mkdir src
+```
+Use the following command to construct files and folders that are the base construction in “catkin”
+```bash
+catkin_make
+```
+Now, after we constructed the workspace, we are going to make every Terminal can access workspace. By using
+the following command, .bashrc file will be open with default text editor.
+```bash
+gedit ~/.bashrc
+```
+Scroll down to the last line and press Enter. Then add the following command to .bashrc file
+```bash
+source ~/catkin_ws/devel/setup.bash
+```
+Save the file. ROS Workspace now has been done!!
 
+#### Arduino installation tutorial :
+Install the Arduino IDE. Everything can be downloaded at the Arduino website.
+```bash
+weget https://www.arduino.cc/arduino-1.8.15-linux64.tar.xz
+```
 
+```bash
+tar -xvf ./arduino-1.8.15-linux64.tar.xz
+```
+```bash
+cd arduino-1.8.15
+```
+```bash
+sudo ./install.sh
+```
