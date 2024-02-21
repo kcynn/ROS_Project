@@ -125,6 +125,22 @@ source ~/catkin_ws/devel/setup.bash
 ```
 Save the file. ROS Workspace now has been done!!
 
+## Arduino installation tutorial 
+Install the Arduino IDE. Everything can be downloaded at the Arduino website.
+```bash
+weget https://www.arduino.cc/arduino-1.8.15-linux64.tar.xz
+```
+
+```bash
+tar -xvf ./arduino-1.8.15-linux64.tar.xz
+```
+```bash
+cd arduino-1.8.15
+```
+```bash
+sudo ./install.sh
+```
+
 ## Creat ROS Package
 Open Terminal and go to catkin_ws directory with the following command
 ```bash
@@ -145,21 +161,6 @@ cd ..
 catkin_make
 ```
 
-## Arduino installation tutorial 
-Install the Arduino IDE. Everything can be downloaded at the Arduino website.
-```bash
-weget https://www.arduino.cc/arduino-1.8.15-linux64.tar.xz
-```
-
-```bash
-tar -xvf ./arduino-1.8.15-linux64.tar.xz
-```
-```bash
-cd arduino-1.8.15
-```
-```bash
-sudo ./install.sh
-```
 ## How to install
 1.go into src file of your ROS workspace
 ```bash
@@ -168,13 +169,21 @@ cd ~/(name your catkin workspace)/src
 2.clone github
 ```bash
 git clone https://github.com/user name/ROS_Project.git
+```
+```bash
 cd ..
+```
+```bash
 catkin_make
 ```
 3.add permission to execute gui python
 ```bash
 cd src/ROS_Project/src
+```
+```bash
 chmod +x gui_ros.py
+```
+```bash
 roslaunch (name your package) ros_robot.launch port:="(name your port of arduino)"
 ```
 
