@@ -164,7 +164,7 @@ catkin_make
 ## How to install
 1.go into src file of your ROS workspace
 ```bash
-cd ~/(name your catkin workspace)/src
+cd ~/(name your catkin workspace)/git_dir
 ```
 2.clone github
 ```bash
