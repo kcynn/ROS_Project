@@ -184,6 +184,6 @@ cd src/ros_project
 chmod +x gui_ros.py
 ```
 ```bash
-roslaunch ROS_Project ros_robot.launch port:="(name your port of arduino)"
+roslaunch ros_project ros_robot.launch port:="(name your port of arduino)"
 ```
 > ex port >> /dev/ttyACM0
